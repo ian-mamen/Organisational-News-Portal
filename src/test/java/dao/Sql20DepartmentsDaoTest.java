@@ -24,12 +24,12 @@ public class Sql20DepartmentsDaoTest {
     @Before
     public void setUp() throws Exception {
         //uncomment the two lines below to run locally and change to your  credentials
-//        String connectionString = "jdbc:postgresql://localhost:5432/organisational_news_portal_test";
-//        Sql2o sql2o = new Sql2o(connectionString, "mamen", "Theyoungstylist007@");
+        String connectionString = "jdbc:postgresql://localhost:5432/organisational_news_portal_test";
+        Sql2o sql2o = new Sql2o(connectionString, "mamen", "Theyoungstylist007@");
 
         //comment the two lines below to run locally
-         String connectionString = "jdbc:postgresql://ec2-54-234-28-165.compute-1.amazonaws.com:5432/d90lff6n3emlli"; //!
-        Sql2o sql2o = new Sql2o(connectionString, "yrhlomtnrmnmzz", "e6d836bfda3301e46b98ffafbdff064a6b47ed825f1c8b6969fd65bb8526da87");
+//         String connectionString = "jdbc:postgresql://ec2-54-234-28-165.compute-1.amazonaws.com:5432/d90lff6n3emlli"; //!
+//        Sql2o sql2o = new Sql2o(connectionString, "yrhlomtnrmnmzz", "e6d836bfda3301e46b98ffafbdff064a6b47ed825f1c8b6969fd65bb8526da87");
         sql2oDepartmentsDao=new Sql20DepartmentsDao(sql2o);
         sql2oUsersDao=new Sql20UsersDao(sql2o);
         sql2oNewsDao=new Sql20NewsDao(sql2o);

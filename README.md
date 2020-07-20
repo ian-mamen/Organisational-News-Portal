@@ -19,48 +19,48 @@ into any department, and others that are housed/classified within departments.
 
 ## API documentation
 ### User
-* Creating user  https://organisational-news-portal-api.herokuapp.com/users/new \
+* Creating user  
 { \
   "name":"Ian Amuga"\
   "position":"Manager",\
   "staff_role":"Writer"\
  }
- * Viewing User  https://organisational-news-portal-api.herokuapp.com/users 
- * Viewing Specific User https://organisational-news-portal-api.herokuapp.com/user/:id \
+ * Viewing User  
+ * Viewing Specific User 
  Replace :id with id of user
- * Viewing Specific User Departments  https://organisational-news-portal-api.herokuapp.com/users/:id/departments \
+ * Viewing Specific User Departments  
  Replace :id with id of user
  
  ### Departments
- * Creating Departments  https://organisational-news-portal-api.herokuapp.com/departments/new \
+ * Creating Departments  
 { \
   "name":"Editing",\
   "description":"Editing of books"\
  }
- * Viewing Departments  https://organisational-news-portal-api.herokuapp.com/departments 
- * Viewing Specific Department https://organisational-news-portal-api.herokuapp.comdepartment/:id \
+ * Viewing Departments  
+ * Viewing Specific Department 
  Replace :id with id of department
- * Viewing Specific User in Departments  https://organisational-news-portal-api.herokuapp.com/department/:id/users \
+ * Viewing Specific User in Departments  
  Replace :id with id of department
- * Adding users to department in Departments  https://organisational-news-portal-api.herokuapp.com/add/user/:user_id/department/:department_id \
+ * Adding users to department in Departments  
  Replace :id with id of department
  
  ### News
- * Creating General News https://organisational-news-portal-api.herokuapp.com/news/new/general \
+ * Creating General News
 { \
   "title":"Meeting",\
   "description":"Discussion about expanding",\
   "user_id":1 \
  }
- * Creating Department News https://organisational-news-portal-api.herokuapp.com/news/new/department \
+ * Creating Department News \
 { \
   "title":"Meeting",\
   "description":"Discussion about expanding",\
   "department_id":1, \
   "user_id":1 \
  }
- * Viewing general news  https://organisational-news-portal-api.herokuapp.com/news/general 
- * Viewing department news https://organisational-news-portal-api.herokuapp.com/news/department/:id 
+ * Viewing general news   
+ * Viewing department news 
  
 
 ## Technologies Used
